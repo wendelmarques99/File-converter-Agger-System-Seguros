@@ -63,7 +63,7 @@ server <- function(input, output, session) {
   # Exportar notas em excel -------------------------------------------------
   output$download1 <- downloadHandler(
     filename <- function(){
-      paste0("Agger-", Sys.Date(), ".csv")
+      paste0("Agger - ", Sys.Date(), ".csv")
     },
     content <- function(file) {
       shiny::withProgress(
